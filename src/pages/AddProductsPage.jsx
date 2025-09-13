@@ -119,7 +119,7 @@ const AddProductPage = () => {
           const response = await fetch("http://localhost:4000/api/owner/add-product", {
             method: "POST",
             headers: {
-                Authorization: `Bearer ${localStorage.getItem('token') || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmE2YjYxNDVjOTYxYTIwZTQ3NjhjOCIsInJvbGUiOiJvd25lciIsInVzZXJuYW1lIjoib3duZXIxIiwiaWF0IjoxNzU3NzU1NDc3LCJleHAiOjE3NTgzNjAyNzd9.j1b9yt982rbXtFsyeTWlvtnfe0Hio-AQ7dD68oYntJg'}`,
+                Authorization: `Bearer ${localStorage.getItem('token') || ''}`,
                 // NOTE: do NOT set Content-Type for FormData
             },
             body: form
