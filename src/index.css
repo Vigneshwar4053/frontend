@@ -1,0 +1,6 @@
+@import "tailwindcss";
+:root
+{
+    --primary_clr: #1F262E; 
+    --secondary_clr: #F15E18;
+}
