@@ -11,7 +11,7 @@ const ManageProductsPage = () => {
 
   // helper to read token from localStorage
   const getAuthHeader = () => {
-    const token = localStorage.getItem('token') || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YmE2YjYxNDVjOTYxYTIwZTQ3NjhjOCIsInJvbGUiOiJvd25lciIsInVzZXJuYW1lIjoib3duZXIxIiwiaWF0IjoxNzU3NzU1NDc3LCJleHAiOjE3NTgzNjAyNzd9.j1b9yt982rbXtFsyeTWlvtnfe0Hio-AQ7dD68oYntJg';
+    const token = localStorage.getItem('token') || '';
     return { Authorization: `Bearer ${token}` };
   };
 
